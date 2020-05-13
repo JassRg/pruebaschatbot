@@ -1,6 +1,6 @@
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
-
+echo "Hola";
 if($method = "POST"){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
